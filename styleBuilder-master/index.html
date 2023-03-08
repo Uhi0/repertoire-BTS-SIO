@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Style Builder</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <div>
+        <h3>Style Builder</h3>
+        <input type="text" placeholder="Nom du style" required id="nomStyle"><br>
+        <caption>Mise en forme du texte</caption>
+        <select id="txtStyle">
+            <option value="txtBlack">Noir</option>
+            <option value="txtWhite">Blanc</option>
+            <option value="txtBlue">Bleu</option>
+        </select>
+        <br>
+        <caption>Mise en forme du fond</caption>
+        <select id="fondStyle">
+            <option value="fondClair">Clair</option>
+            <option value="fondFonce">Foncé</option>
+            <option value="fondRouge">Rouge</option>
+        </select>
+        <br>
+        <caption>Mise en forme de l'image</caption>
+        <select id="imgStyle">
+            <option value="imgArrondie">Arrondie</option>
+            <option value="imgTransparente">Transparente</option>
+            <option value="imgNB">Noir & blanc</option>
+        </select>
+        <br>
+        <input type="submit" onclick="ajouterStyle()" value="Créer style">
+    </div>
+    <div>
+        <h3>Zone de test du style</h3>
+        <select id="choixStyle" onchange="majStyle()">
+            
+        </select>
+        
+<div id="txt">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum est. Nullam rutrum ante sit amet lorem varius, in porttitor ligula iaculis. Cras malesuada nulla non placerat ultricies. Cras ac varius neque, varius auctor diam. Curabitur dignissim lacus a velit consectetur, a ullamcorper elit semper. Vivamus fringilla felis dolor. Nunc sed pretium tortor. Nulla eu libero velit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+Aliquam varius commodo lectus in pretium. Praesent lectus lectus, pretium eu enim at, tempus auctor lacus. Mauris leo nisl, rutrum at efficitur vel, ornare vel tortor. Proin tellus est, sollicitudin nec metus eget, elementum maximus quam. Duis rhoncus elementum nisi vel blandit. Aenean sit amet nulla facilisis, euismod eros quis, convallis magna. Praesent ut rutrum magna, vitae semper turpis. Vestibulum vitae tellus et urna rutrum auctor ac id nisl. Suspendisse sodales massa nulla, vel facilisis metus laoreet a.
+
+Donec a ante est. Donec condimentum elit in rutrum tincidunt. Ut in dictum neque. Aenean orci velit, feugiat eget tortor ac, fermentum venenatis enim. Sed faucibus felis vulputate nunc sollicitudin, non blandit dui pellentesque. Nullam elementum turpis ac mollis scelerisque. In ut convallis sapien. Phasellus hendrerit augue sed ullamcorper pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse ultricies finibus ipsum, maximus rhoncus nunc. Cras quam urna, dictum eu lacinia ut, mattis ut ligula. Etiam sit amet molestie erat. Aliquam leo dolor, auctor dignissim malesuada nec, ultricies quis est. Duis finibus feugiat diam, vitae condimentum felis congue in. Nam blandit, augue sit amet volutpat euismod, eros nibh tincidunt purus, a hendrerit elit quam quis velit. Nullam lorem nisi, condimentum a turpis sed, semper egestas enim.
+
+Sed commodo massa a posuere molestie. Donec volutpat enim quis pellentesque pharetra. Cras hendrerit, felis non congue efficitur, ipsum metus hendrerit dolor, auctor congue libero ipsum non sem. Vivamus quis dui et velit condimentum convallis. Proin imperdiet ac lorem nec viverra. Proin semper mauris interdum, eleifend neque eu, commodo justo. Proin sed posuere nulla. Nam gravida ultricies nibh in vehicula. Nullam nec urna pretium, mattis est vitae, ultricies odio. Etiam sit amet porta arcu, lobortis cursus nunc. Donec luctus volutpat mattis. Duis elementum sem sed nisi egestas sagittis.
+
+Integer vitae magna dignissim, sagittis ante ac, semper est. Fusce consequat leo mi, at aliquet sapien cursus at. Sed eget feugiat massa, ac vehicula neque. Nullam neque ligula, accumsan ac purus sed, accumsan suscipit enim. Duis luctus nisi mauris, vitae convallis enim placerat vitae. Curabitur dictum urna nec tempor malesuada. Praesent et purus arcu. 
+</div>
+<img src="chat.jpg" alt="un chat">
+
+
+    </div>
+</body>
+<script>
+init();
+majStyle();
+</script>
+</html>

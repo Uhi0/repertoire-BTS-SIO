@@ -1,0 +1,37 @@
+.txtBlack{
+  color: black;  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.txtWhite{
+    color: whitesmoke;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.txtBlue{
+    color: cadetblue;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+
+.fondClair{
+    background-color: beige;
+}
+.fondFonce{
+    background-color: dimgrey;
+}
+.fondRouge{
+    background-color: brown;
+}
+
+.imgArrondie{
+    border-radius: 30%;
+}
+.imgTransparente{
+    opacity: 50%;
+}
+.imgNB{
+    filter: grayscale(100%);
+}
